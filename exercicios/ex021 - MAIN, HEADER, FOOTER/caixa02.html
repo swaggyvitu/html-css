@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #13171f;
+            color: #ffffff;
+            margin: 0;
+        }
+
+        nav > a{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+            margin: 0px 0.5em 0px 0.5em;
+            background-color: #244462;
+            padding: 0.3em;
+            border-radius: 0.3em;
+            border: 1px solid #ffffff;
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        nav > a:hover{
+            background-color: #ffffff;
+            color: #132d46;
+            border-color: #3e76aa;
+        }
+
+        header{
+            width:500px;
+            padding:1px 0px 20px 0px;
+            margin: 2em auto 2em auto;
+            background-color: #132d46;
+            border-radius: 1em;
+            text-align: center;
+        }
+
+        main{
+            background-color: #132d46;
+            padding: 1em;
+            border-radius: 1em;
+            margin: 2em 1em 2em 1em;
+        }
+        
+        main > section > article > h2{
+            text-decoration: underline;
+        }
+
+        footer{
+             background-color: #252525;
+             color: gray;
+             text-align: center;
+             padding: 1px;
+        }
+        article{
+            background-color: #244462;
+            padding: 5px 1em 5px 1em;
+            border-radius: 0.5em;
+        }
+        
+        article > h2:hover{
+            color: rgb(36, 187, 229);
+        }
+
+        article > aside {
+            color: gray;
+        }
+
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque libero ab, exercitationem amet accusantium veniam earum modi debitis, quaerat, rerum totam eveniet. Non ullam animi obcaecati rerum quasi provident sapiente?</p>
+                <aside>
+                    <p>Artigo escrito por José da Silva</p>
+                </aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido pelo CursoemVideo</p>
+    </footer>
+</body>
+</html>
