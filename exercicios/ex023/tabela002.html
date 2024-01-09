@@ -20,10 +20,20 @@
         tr{
            
         }
-        
+        caption{
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background: lightgray;
+        }
+
         thead, tfoot{
-            background-color: gray;
+            background-color: rgb(83, 82, 82);
             color: white;
+        }
+
+        tbody > tr:nth-child(2n){
+            background-color: lightgrey;
         }
 
         td.num{
@@ -36,6 +46,7 @@
     <!-- 
         ANATOMIA PARA TABELAS GRANDES
         TABLE
+            CAPTION
             THEAD
                 TR,TD,TH
             TBODY
@@ -44,9 +55,10 @@
                 TR,TD,TH
      -->
      <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
         </thead>
         <tbody>
             <tr>
@@ -61,10 +73,14 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">36 919 093</td>
             </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">22 349 053</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">XXX XXX XXX</td>
             </tr>
         </tfoot>
